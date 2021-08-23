@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="text-center" style="color: #F2BB7B">ĐẶT VÉ XE BUS HÃNG CYBERSOFT</h1>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3 p-4 border-right">
+            <div class="mb-3">
+                <button class="btn-dark btn-taixe" disabled>Tài xế</button>
+            </div>
+            <app-ghe *ngFor="let ghe of DanhSachGhe" [itemGhe]="ghe"
+            (emitStatus)="DatGheParent($event,ghe.TenGhe,ghe.Gia)" ></app-ghe>
+        </div>
+        <div class="col-4 ml-4">
+            <h4 style="color: #F6D167">Danh sách ghế đã đặt ({{soGheDaDat}})</h4>
+            <div *ngFor="let gheDat of mangGheDaDat">
+                <p>Ghế: {{gheDat.tenGhe}} ${{gheDat.gia}} 
+                    <button class="btn-danger">Hủy</button> 
+                </p>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

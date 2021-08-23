@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4 mx-auto">
+            <h2 style="color: #F2BB7B">CHỨC NĂNG THÊM GHẾ</h2>
+            <input class="form-control mb-3" #ten type="text" placeholder="Tên ghế">
+            <input class="form-control mb-3" #soGhe type="text" placeholder="Số ghế">
+            <input class="form-control mb-3" #gia type="text" placeholder="Giá">
+            <select #trangThai class="form-control mb-3" id="">
+                <option value="false">Chưa đặt</option>
+                <option value="true">Đã đặt</option>
+            </select>
+            <button class="btn btn-primary mb-5" (click)="themGheParent(ten.value,soGhe.value,gia.value,trangThai.value)">Thêm ghế</button>
+        </div>
+    </div>
+</div>
+<app-danh-sach-ghe></app-danh-sach-ghe>

@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BaiTap5Module } from './BaiTap5/BaiTap5.module';
 import { BaiTap6Module } from './BaiTap6/BaiTap6.module';
 import { DirectiveModule } from './Directive/Directive.module';
+import { QuanTriGHeModule } from './quan-tri-ghe/quan-tri-ghe.module';
 
 registerLocaleData(en);
 
@@ -25,6 +26,7 @@ registerLocaleData(en);
     AppRoutingModule,
     BaiTap5Module,
     BaiTap6Module,
+    QuanTriGHeModule,
     DirectiveModule,
     FormsModule,
     HttpClientModule,
